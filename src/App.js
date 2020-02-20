@@ -1,24 +1,15 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
+import ImageComponents from "./components/ImageComponents";
 import "./App.css";
 
 function App() {
-
-  state = {
-
-  };
-
-  useEffect(() => {
-    
-  });
-
-  return (
-    <div className="App">
-      <p>
-        Read through the instructions in the README.md file to build your NASA
-        app! Have fun <span role="img" aria-label="rocket emoji">🚀</span>!
-      </p>
-    </div>
-  );
+   return (
+      <div className="container">
+         <h1>N A S A</h1>
+         <h2>NASA API: Astronomy Photo Of The Day</h2>
+         <ImageComponents />
+      </div>
+   );
 }
 
 export default App;
