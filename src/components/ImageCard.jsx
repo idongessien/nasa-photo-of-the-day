@@ -9,16 +9,19 @@ const ImageContainer = styled.div`
  font-size: 1.5rem;
  line-height: 2.5rem;
 `
+const ImageTitle = styled.h2`
+   font-size: 1.5rem;
+`
+
 const HdImg = styled.img`
-   width:100%;
-   height: 50vh;
+   width:80%;
 `
 
 const ImageCard = props => {
    return (
       <ImageContainer>
-         <h2>{props.title}</h2>
-         <HdImg src={props.image} alt="random generated from NASA API" />
+         <ImageTitle>{props.title}</ImageTitle>
+         <HdImg src={props.image} alt="random generated from NASA API"></HdImg>
          <p>{props.date}</p>
          <p>{props.explanation}</p>
       </ImageContainer>
