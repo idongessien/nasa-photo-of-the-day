@@ -19,14 +19,14 @@ function ImageComponents() {
    }, []);
    return (
       <div className="info-style">
-         return (
+         
          <ImageCard
             title={infos.title}
             image={infos.hdurl}
             date={infos.date}
             explanation={infos.explanation}
          />
-         );
+         
       </div>
    );
 }
